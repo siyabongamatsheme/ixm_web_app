@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+   
+<style>
+	
+/* General Styles */
+body {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+	font-family: Tahoma, sans-serif;
+}
+
+h1{
+text-align:center;
+}
+
+.logo img,
+.client-logo img {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    top: 0;
+}
+
+
+.logo img {
+    left: 0;
+}
+
+.client-logo img {
+    right: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+
+
+
+/* Upload Button */
+.upload-btn {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+	width :20%;
+    display: block;
+    text-align: left;
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, padding-left 0.3s;
+	background-color: grey;
+}
+
+.upload-btn:hover {
+    background-color: #34495e ;
+    padding-left: 10px;
+}
+
+/* Submit Button */
+.upload-submit {
+    color: white;
+    background-color: grey;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.upload-submit:hover {
+    background-color: #34495e;
+}
+
+/* Links */
+.side-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    display: block;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: #34495e;
+    padding-left: 10px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+/* Footer Styling */
+.footer {
+    position: absolute;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #e7e7e7;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.footer p {
+    position: relative;
+    text-align: center;
+}
+
+/* Footer Logo */
+.footer_logo img {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 0;
+    bottom: 0;
+}
+
+	</style>
+</head>
+<body>
+    
+ <header >
+ <div class="logo">
+	<a href="UploadSheduleUI.html">
+	 <img src="icons/logo.png" alt="Logo">
+	</a>
+	</div>
+	<div class="client-logo">
+	<a href="#">
+	 <img src="#" alt="client_logo">
+	</a>
+    
+</header>
+
+           
+        <main class="content">
+            <h1>File Upload System</h1>
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+                <label class="upload-btn">
+                    Choose File
+                    <input type="file" name="uploadedFile" required style="display: none;">
+                </label>
+                <button type="submit" class="upload-submit">Submit</button>
+            </form>
+            <p>Select a file from the device to upload it.</p>
+        </main>
+    </div>
+	
+	<footer>
+        <div class="footer">
+            <p>&copy; 2025 ixm.mobi . All rights reserved.</p>
+			<div class="footer_logo">
+	<a href="#">
+	 <img src="icons/inch_logo.jpg" alt="Flogo">
+	</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
