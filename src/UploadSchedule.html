@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="ixm-style.css">
+<html>
+
+    <head>
+        <title>Nhlo</title>
+    </head>
+    <body>
+        <h1>Upload Schedule</h1>
+        <div class="ixm-header">
+            <div class="ixm-us-input">
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" id="file">
+                    <input type="submit" value="Upload" name="submit">
+                </form>
+    
+            </div>
+            <div class="ixm-us-download">
+                <a href="index.php">Download Template File</a>
+                <a href="index.php">Download Error File</a>
+                
+            </div>
+        </div>
+
+        <div class="ixm-tabs">
+            <div class="ixm-tabitem" data-tab="ixm-tabitem1">Overall</div>
+            <div class="ixm-tabitem" data-tab="ixm-tabitem2">Header</div>
+            <div class="ixm-tabitem" data-tab="ixm-tabitem3">Detail</div>                        
+        </div>
+
+        <div>
+            <div id="ixm-tabitem1" class="ixm-tabitem-content">
+                <p>Selected Item 1</p>
+                <label for="eventLog">Event log:</label>
+                <textarea
+                  readonly
+                  class="event-log-contents"
+                  rows="8"
+                  cols="30"
+                  id="eventLog"></textarea>                
+            </div>
+            <div id="ixm-tabitem2" class="ixm-tabitem-content">
+                <p>Selected Item 2</p>            
+            </div>
+            <div id="ixm-tabitem3" class="ixm-tabitem-content">
+                <p>Selected Item 3</p>          
+            </div>                        
+        </div>
+
+        <p id="demo"></p>   
+
+    </body>
+
+    <script src="./UploadSchedule.js"></script>
+    <script>
+
+
+        document.addEventListener("DOMContentloaded", myContent);
+        
+        function myContent() {
+        console.log("DOM fully loaded and parsed");
+        log.textContent += "DOMContentLoaded\n";
+        }
+
+
+    </script>
+
+</html>

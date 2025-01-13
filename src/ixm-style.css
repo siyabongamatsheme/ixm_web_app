@@ -1,0 +1,91 @@
+
+.ixm-header{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.ixm-us-input{
+    display:inline-block;
+    flex: 1;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    width: 150px;
+}
+.ixm-us-download{
+    display:inline-block;
+    padding: 10px;
+    width: 200px;
+    border-bottom: 1px solid #e7e7e7;
+    justify-content: right;
+}
+
+.ixm-tabs{
+    display: flex;
+    direction: row;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.ixm-tabitem{
+    margin: 10px 5px 0px 5px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 2%;
+    padding-bottom: 10px;
+    transition: bottom-border 0.5s;
+
+}
+.ixm-tabitem:hover{
+    border-bottom: 1px solid  #1a1111;
+    padding: 2%;
+    padding-bottom: 10px;
+    transition: bottom-border 0.5s;
+}
+.ixm-tabitem-selected{
+    margin: 10px 5px 0px 5px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 2%;
+    padding-bottom: 10px;
+    transition: bottom-border 0.5s;
+
+}
+.ixm-tabitem-selected:hover{
+    border-bottom: 1px solid  #1a1111;
+    background-color: #1a1111;
+    color: #e7e7e7;
+    padding: 2%;
+    padding-bottom: 10px;
+    transition: bottom-border 0.5s;
+}
+.ixm-tabitem-content{
+    padding: 20px 0;
+    display: none;
+    position:relative;
+}
+.ixm-tabitem-content h3{
+    font-size: 16px;
+    font-weight: 600;
+    list-style: 24px;
+    margin-bottom: 10px;
+    color:#333;
+}
+.ixm-tabitem-content:hover{
+    opacity:0.9;
+}
+
+.ixm-tabitem-content span{
+    top:-6px;
+    font-size: 40px;
+    position: relative;
+
+}
