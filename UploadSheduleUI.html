@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="ixm-style.css">
+    <title>Website with Side Menu</title>
+
+</head>
+<body>
+<header >
+ <div class="logo">
+	<a href="index.html">
+	 <img src="icons/logo.png" alt="Logo">
+	</a>
+	</div>
+	<div class="client-logo">
+	<a href="#">
+	 <img src="#" alt="client_logo">
+	</a>
+	</div>
+        <h1>Upload schedule</h1>
+        <div class="ixm-header">
+            <a class="ixm-tabitem" data-tab="ixm-tabitem1">Overall</a>
+            <a class="ixm-tabitem" data-tab="ixm-tabitem2">Header</a>
+            <a class="ixm-tabitem" data-tab="ixm-tabitem2">Details</a>
+            
+        </div>
+    
+</header>
+<main>
+
+    <aside class="side-menu">
+        <h2>Menu</h2>
+        <a href="#">Upload Schedule</a>
+        <a href="#">Update Memeber Details</a>
+        <a href="#">Download Template</a>
+    </aside>
+	
+	 <div class="content">
+        <div id="ixm-tabitem1" class="ixm-tabitem-content active">
+            <p>Selected Item 1</p>
+            <label for="eventLog">Event log:</label>
+            <textarea readonly class="event-log-contents" rows="8" cols="30" id="eventLog"></textarea>
+        </div>
+        <div id="ixm-tabitem2" class="ixm-tabitem-content">
+            <p>Selected Item 2</p>
+        </div>
+        <div id="ixm-tabitem3" class="ixm-tabitem-content">
+            <p>Selected Item 3</p>
+        </div>
+    </div>
+
+
+        <p id="demo"></p>   
+		</main>
+
+<footer>
+        <div class="footer">
+            <p>&copy; 2025 ixm.mobi . All rights reserved.</p>
+			<div class="footer_logo">
+	<a href="#">
+	 <img src="icons/inch_logo.jpg" alt="Flogo">
+	</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+ <script src="./UploadSchedule.js"></script>
+    <script>
+
+
+        document.addEventListener("DOMContentloaded", myContent);
+        
+        function myContent() {
+        console.log("DOM fully loaded and parsed");
+        log.textContent += "DOMContentLoaded\n";
+        }
+
+
+    </script>
+</html>
